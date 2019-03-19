@@ -1,5 +1,5 @@
 This project was created to try out and test the UniBit API and see how both 'realtime' and 'historical' stock quotes API work
 # To run install requests using:
 `pip install requests`
-### After just run:
+# After get into the project folder directory and run:
 `python main.py`
