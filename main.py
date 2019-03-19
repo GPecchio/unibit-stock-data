@@ -46,7 +46,6 @@ def lastNDays(ticker):
     # add each day data to the overall list
     day_number = 0
     # for every day, save it in a new stock instance and add it to the overall list
-    print 'https://api.unibit.ai/historicalstockprice/'+ ticker + '?range=1m&interval=1&AccessKey=' + API_key
     for day in request:
         day_number = day_number + 1
         # check if day ended in a gain or loss
@@ -70,7 +69,7 @@ def lastNDays(ticker):
     return data, profit_loss, percentage_profit_loss
 
 # TESTS
-'''
+
 print '========= Apple - AAPL ========='
 print getStockInfo('AAPL')
 print lastNDays('AAPL')
@@ -81,5 +80,4 @@ print lastNDays('CLVS')
 
 print '========= Twilio - TWLO ========='
 print getStockInfo('TWLO')
-'''
-print lastNDays('TWLO')
+#print lastNDays('TWLO')
